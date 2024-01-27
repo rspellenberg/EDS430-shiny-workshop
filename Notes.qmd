@@ -1,0 +1,23 @@
+---
+title: "workshop notes"
+name: "Rachel Spellenberg"
+---
+
+## Shiny examples
+
+library(shiny) 
+runExample(example = NA) 
+runExample(example = '01_hello')
+
+ui <- fluidPage() ## creates foundation of our page
+
+## Global.R
+- seems to be a place to send packages and custom ggplot themes that you want to use across your app. Helps to not gunk up server
+
+Can inspect element to double check that outputs work before they actually show up
+
+ output$bodyMass_scatterplot_output <- # code to generate plot
+ 
+ follow all reactive dfs with ()!!!
+ 
+ justified = TRUE # takes up full width of the sidebarPanel
